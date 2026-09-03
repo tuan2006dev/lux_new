@@ -17,7 +17,7 @@ public class ProductImage implements Serializable {
     @JsonIgnore
     private Product product;
 
-    @Column(name = "image_url", nullable = false, columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "image_url", nullable = false, columnDefinition = "TEXT")
     private String imageUrl;
 
     @Column(name = "display_order")

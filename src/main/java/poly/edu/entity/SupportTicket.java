@@ -18,7 +18,7 @@ public class SupportTicket {
     @Column(length = 1000)
     private String subject;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String message;
 
     // OPEN, IN_PROGRESS, RESOLVED, CLOSED
@@ -27,7 +27,7 @@ public class SupportTicket {
     // GENERAL, BUILD_PC, ORDER, TECHNICAL, PRICE
     private String category = "GENERAL";
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String adminReply;
 
     private String assignedAdmin;
@@ -44,7 +44,7 @@ public class SupportTicket {
     private User user;
 
     // Build config snapshot (JSON string from 3D builder)
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String buildConfig;
 
     @PrePersist

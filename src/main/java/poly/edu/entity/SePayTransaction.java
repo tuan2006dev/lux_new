@@ -39,13 +39,13 @@ public class SePayTransaction {
     @Column(name = "processing_status", nullable = false, length = 64)
     private String processingStatus;
 
-    @Column(name = "raw_payload", nullable = false, columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "raw_payload", nullable = false, columnDefinition = "TEXT")
     private String rawPayload;
 
-    @Column(name = "received_at", nullable = false, columnDefinition = "datetime")
+    @Column(name = "received_at", nullable = false)
     private Instant receivedAt;
 
-    @Column(name = "processed_at", columnDefinition = "datetime")
+    @Column(name = "processed_at")
     private Instant processedAt;
 
     public Long getId() {

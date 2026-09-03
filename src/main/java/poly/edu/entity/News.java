@@ -23,13 +23,13 @@ public class News implements Serializable {
     @Column(nullable = false, unique = true, length = 255)
     private String slug;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String content;
 
     @Column(length = 255)
     private String thumbnail;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String summary;
 
     @Column(name = "view_count", columnDefinition = "BIGINT DEFAULT 0")
@@ -38,7 +38,7 @@ public class News implements Serializable {
     @Column(name = "meta_title", length = 255)
     private String metaTitle;
 
-    @Column(name = "meta_description", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "meta_description", columnDefinition = "TEXT")
     private String metaDescription;
 
     @Column(name = "meta_keywords", length = 255)

@@ -21,7 +21,7 @@ public class TicketMessage {
     @Column(name = "sender_name")
     private String senderName;
 
-    @Column(nullable = false, columnDefinition = "NVARCHAR(MAX)")
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String message;
 
     @Temporal(TemporalType.TIMESTAMP)

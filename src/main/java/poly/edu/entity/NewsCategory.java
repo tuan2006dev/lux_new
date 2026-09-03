@@ -19,7 +19,7 @@ public class NewsCategory implements Serializable {
     @Column(nullable = false, unique = true, length = 100)
     private String slug;
 
-    @Column(columnDefinition = "NVARCHAR(MAX)")
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @Column(nullable = false, length = 20)
